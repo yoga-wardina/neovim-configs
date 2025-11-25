@@ -12,6 +12,14 @@ return {
     end,
   },
 
+  -- Nvim-tree for file exploring
+  {
+    'nvim-tree/nvim-tree.lua',
+    config = function()
+      require('nvim-tree').setup()
+    end,
+  },
+
   -- LSP Configuration
   {
     'neovim/nvim-lspconfig',

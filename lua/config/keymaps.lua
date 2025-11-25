@@ -1,6 +1,9 @@
 -- [[ Basic Keymaps ]]
 --  See `:help keymaps`
 
+vim.g.mapleader = ' '
+vim.g.maplocalleader = ' '
+
 -- Keymaps for better default experience
 -- See `:help vim.keymap.set()`
 vim.keymap.set({ 'n', 'v' }, '<Space>', '<Nop>', { silent = true })
@@ -20,6 +23,10 @@ vim.keymap.set('n', '<C-S-p>', function()
   require('telescope.builtin').find_files()
 end, { desc = '[C-S-p] a file' })
 
+-- [[ Nvim-tree Keymaps ]]
+vim.keymap.set('n', '<leader>qp', function()
+  require('nvim-tree.api').tree.toggle()
+end, { desc = 'Toggle nvim-tree' })
 
 -- The line beneath this is called `modeline`. See `:help modeline`
 -- vim: ts=2 sts=2 sw=2 et
