@@ -30,7 +30,7 @@ vim.opt.rtp:prepend(lazypath)
 require('lazy').setup({
   spec = {
     -- file extensions
-    { import = 'custom.plugins' },
+    { import = 'config.plugins' },
   },
   -- Configure any other settings here. See the documentation for more details.
   -- colorscheme that will be used when installing plugins.
@@ -61,8 +61,8 @@ require('lazy').setup({
 })
 
 -- [[ Load custom configuration ]]
-require('custom.options')
-require('custom.keymaps')
+require('config.options')
+require('config.keymaps')
 require('custom.lsp')
 require('custom.colorscheme')
 
