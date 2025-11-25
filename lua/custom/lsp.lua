@@ -78,5 +78,14 @@ masonlsp.setup({
 				},
 			})
 		end,
+
+		["ts_ls"] = function()
+        lspconfig.ts_ls.setup({
+            on_attach = on_attach,
+            capabilities = capabilities,
+            -- Force it to look for tsconfig.json to avoid single-file mode
+            root_dir = lspconfig.util.root_pattern("tsconfig.json", "package.json", ".git"),
+        })
+    end,
 	},
 })

@@ -66,6 +66,7 @@ require('config.keymaps')
 require('custom.lsp')
 require('custom.colorscheme')
 
+print('hello there!')
 
 -- The line beneath this is called `modeline`. See `:help modeline`
 -- vim: ts=2 sts=2 sw=2 et
