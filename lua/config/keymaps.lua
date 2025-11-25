@@ -24,7 +24,7 @@ vim.keymap.set('n', '<C-S-p>', function()
 end, { desc = '[C-S-p] a file' })
 
 -- [[ Nvim-tree Keymaps ]]
-vim.keymap.set('n', '<leader>qp', function()
+vim.keymap.set('n', '<leader><BS>', function()
   require('nvim-tree.api').tree.toggle()
 end, { desc = 'Toggle nvim-tree' })
 

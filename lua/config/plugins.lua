@@ -64,12 +64,9 @@ return {
           css = {
             require('formatter.filetypes.css').prettier,
           },
-          lua = {
-            require('formatter.filetypes.lua').stylua,
-          },
           go = {
             require('formatter.filetypes.go').gofmt,
-          }
+         }
         },
       }
 
