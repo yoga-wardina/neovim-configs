@@ -33,4 +33,4 @@ end, { desc = 'Toggle nvim-tree' })
 -- Set highlight on search, but clear on pressing <Esc> in normal mode
 vim.keymap.set('n', '<Esc>', '<cmd>nohlsearch<CR>')
 -- In visual mode, use C-x to copy to system clipboard
-vim.keymap.set('v', '<C-x>', '"+y', { desc = 'Copy selection to system clipboard' }):
+vim.keymap.set('v', '<C-x>', '"+y', { desc = 'Copy selection to system clipboard' })
