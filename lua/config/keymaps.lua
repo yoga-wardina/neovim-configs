@@ -30,3 +30,7 @@ end, { desc = 'Toggle nvim-tree' })
 
 -- The line beneath this is called `modeline`. See `:help modeline`
 -- vim: ts=2 sts=2 sw=2 et
+-- Set highlight on search, but clear on pressing <Esc> in normal mode
+vim.keymap.set('n', '<Esc>', '<cmd>nohlsearch<CR>')
+-- In visual mode, use C-x to copy to system clipboard
+vim.keymap.set('v', '<C-x>', '"+y', { desc = 'Copy selection to system clipboard' }):

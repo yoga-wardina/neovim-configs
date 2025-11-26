@@ -31,6 +31,12 @@ require('lazy').setup({
   spec = {
     -- file extensions
     { import = 'config.plugins' },
+
+    -- Add undo tree
+    {
+      'mbbill/undotree',
+      config = function() vim.keymap.set('n', '<leader>u', vim.cmd.UndotreeToggle, { desc = 'Toggle Undo Tree' }) end,
+    },
   },
   -- Configure any other settings here. See the documentation for more details.
   -- colorscheme that will be used when installing plugins.
@@ -65,6 +71,7 @@ require('config.options')
 require('config.keymaps')
 require('custom.lsp')
 require('custom.colorscheme')
+
 
 print('hello there!')
 
